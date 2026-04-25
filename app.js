@@ -66,7 +66,7 @@ function filterServices() {
 // WhatsApp contact
 function contact(serviceName) {
   const phone = '919131367020;
-  const msg = `Hi Sagar, Mujhe "${serviceName}" service chahiye. Details bhejo.`;
+  const msg = `Hi Somesh, Mujhe "${serviceName}" service chahiye. Details bhejo.`;
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
