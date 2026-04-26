@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 Things Senior Agentic AI Engineers Should Know</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f0;
+            padding: 40px 20px;
+            color: #1a1a1a;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 6px solid;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .card-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1;
+            min-width: 32px;
+        }
+        
+        .card-icon {
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+        
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1.3;
+            flex: 1;
+        }
+        
+        .card-subtitle {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .card li {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            color: #333;
+        }
+        
+        .card li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+        
+        /* Color Themes */
+        .card-1 { border-color: #4A90E2; } .card-1 .card-number, .card-1 li:before { color: #4A90E2; }
+        .card-2 { border-color: #50C878; } .card-2 .card-number, .card-2 li:before { color: #50C878; }
+        .card-3 { border-color: #FF6B35; } .card-3 .card-number, .card-3 li:before { color: #FF6B35; }
+        .card-4 { border-color: #9B59B6; } .card-4 .card-number, .card-4 li:before { color: #9B59B6; }
+        .card-5 { border-color: #F1C40F; } .card-5 .card-number, .card-5 li:before { color: #F1C40F; }
+        .card-6 { border-color: #E91E63; } .card-6 .card-number, .card-6 li:before { color: #E91E63; }
+        .card-7 { border-color: #00BCD4; } .card-7 .card-number, .card-7 li:before { color: #00BCD4; }
+        .card-8 { border-color: #FF5722; } .card-8 .card-number, .card-8 li:before { color: #FF5722; }
+        .card-9 { border-color: #795548; } .card-9 .card-number, .card-9 li:before { color: #795548; }
+        .card-10 { border-color: #607D8B; } .card-10 .card-number, .card-10 li:before { color: #607D8B; }
+        .card-11 { border-color: #3F51B5; } .card-11 .card-number, .card-11 li:before { color: #3F51B5; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.85rem;
+        }
+        
+        @media print {
+            body { background: white; padding: 20px; }
+            .card { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+            .card:hover { transform: none; }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>11 Things Senior Agentic AI Engineers<br>Are Expected to Know in an Interview</h1>
+            <p>.NET + Azure Focus • 80L-1Cr Package Level</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card card-1">
+                <div class="card-header">
+                    <div class="card-number">1</div>
+                    <div class="card-icon">🧠</div>
+                    <div class="card-title">Semantic Kernel & Orchestration Internals</div>
+                </div>
+                <div class="card-subtitle">Not just "use SK". They test deeper knowledge:</div>
+                <ul>
+                    <li>StepwisePlanner vs HandlebarsPlanner trade-offs</li>
+                    <li>DI Lifetimes: Per-request Kernel vs Singleton memory leaks</li>
+                    <li>Why AutoInvoke=false is critical for HIL approval</li>
+                    <li>Deadlock risks: Multi-agent infinite loops & MaxIterations</li>
+                </ul>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card card-2">
+                <div class="card-header">
+                    <div class="card-number">2</div>
+                    <div class="card-icon">🔍</div>
+                    <div class="card-title">RAG Architecture at Scale</div>
+                </div>
+                <div class="card-subtitle">Understand trade-offs beyond vector search:</div>
+                <ul>
+                    <li>Chunking: Semantic vs Fixed. Tables & headings handling</li>
+                    <li>Hybrid Search: Vector + BM25 + Semantic Ranker = 98% Recall@3</li>
+                    <li>Eval with RAGAS: Faithfulness, Answer Relevance metrics</li>
+                    <li>Why In-Memory fails: Need Cosmos DB/AI Search for 100M+ scale</li>
+                </ul>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card card-3">
+                <div class="card-header">
+                    <div class="card-number">3</div>
+                    <div class="card-icon">🤝</div>
+                    <div class="card-title">Multi-Agent Patterns</div>
+                </div>
+                <div class="card-subtitle">Move beyond AutoGen basics:</div>
+                <ul>
+                    <li>GroupChat vs GraphChat: Broadcast vs DAG. When to use</li>
+                    <li>Termination: MaxMessage, TextMention, FunctionCall to stop loops</li>
+                    <li>Judge/Critic Agents: Reflexion pattern. 3x cost but 40% quality up</li>
+                    <li>Cost explosion: 4 agents × 3 turns = 12 LLM calls. Use SLM for critics</li>
+                </ul>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="card card-4">
+                <div class="card-header">
+                    <div class="card-number">4</div>
+                    <div class="card-icon">🎙️</div>
+                    <div class="card-title">Voice AI & Real-time Latency</div>
+                </div>
+                <div class="card-subtitle">Identify & fix <800ms pipeline issues:</div>
+                <ul>
+                    <li>Twilio STT Streaming: Use Recognizing event, not Recognized</li>
+                    <li>Barge-in: StopSynthesisAsync on user interrupt with CancellationToken</li>
+                    <li>TTS Sentence Buffering: Stream tokens, speak on `.` or `?`</li>
+                    <li>Network Jitter: Same-region ACA + OpenAI + Cosmos DB</li>
+                </ul>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="card card-5">
+                <div class="card-header">
+                    <div class="card-number">5</div>
+                    <div class="card-icon">🛡️</div>
+                    <div class="card-title">Guardrails & Responsible AI</div>
+                </div>
+                <div class="card-subtitle">Validate and enforce at 3 layers:</div>
+                <ul>
+                    <li>PII Masking: Presidio + Azure Language. Input + Output + Embedding filters</li>
+                    <li>Prompt Injection: Content Safety Jailbreak + Instruction Defense</li>
+                    <li>DPDP Compliance: Cosmos TTL, Purview audit, Data minimization</li>
+                    <li>HIL for >1L txn: Durable Functions + Teams Adaptive Card approval</li>
+                </ul>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="card card-6">
+                <div class="card-header">
+                    <div class="card-number">6</div>
+                    <div class="card-icon">📊</div>
+                    <div class="card-title">LLMOps & Evaluation</div>
+                </div>
+                <div class="card-subtitle">Move beyond "it works":</div>
+                <ul>
+                    <li>Prompt Versioning: Prompt Flow + Git. Track perf per version</li>
+                    <li>Groundedness Scoring: LLM-as-Judge. <0.8 = fallback to human</li>
+                    <li>Latency P95: Track dependency_duration in App Insights</li>
+                    <li>Cost per 1k req: Token counter + Meter API. Alert if >₹10</li>
+                </ul>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="card card-7">
+                <div class="card-header">
+                    <div class="card-number">7</div>
+                    <div class="card-icon">☁️</div>
+                    <div class="card-title">Azure OpenAI Production</div>
+                </div>
+                <div class="card-subtitle">Optimize TPM/RPM like a pro:</div>
+                <ul>
+                    <li>Quota Management: Multi-region. 10k RPM × 3 = 30k capacity</li>
+                    <li>Semantic Caching: Redis + Embedding. 60% hit = 60% cost save</li>
+                    <li>Batch API: 50% cheaper for offline embedding jobs</li>
+                    <li>SLM Routing: Phi-3-mini for intent, GPT-4o-mini for reply</li>
+                </ul>
+            </div>
+            
+            <!-- Card 8 -->
+            <div class="card card-8">
+                <div class="card-header">
+                    <div class="card-number">8</div>
+                    <div class="card-icon">🏗️</div>
+                    <div class="card-title">System Design for LLM Apps</div>
+                </div>
+                <div class="card-subtitle">Key architectural decisions:</div>
+                <ul>
+                    <li>CAP vs Latency: Cosmos CP for chat, AI Search AP for docs</li>
+                    <li>Caching: Semantic cache Redis vs Prompt cache OpenAI</li>
+                    <li>Queue for Rate Limits: Service Bus on 429. Back-pressure</li>
+                    <li>Circuit Breaker: Polly for OpenAI. Fallback to cached response</li>
+                </ul>
+            </div>
+            
+            <!-- Card 9 -->
+            <div class="card card-9">
+                <div class="card-header">
+                    <div class="card-number">9</div>
+                    <div class="card-icon">🗄️</div>
+                    <div class="card-title">Vector DB Strategies</div>
+                </div>
+                <div class="card-subtitle">Solving complex retrieval:</div>
+                <ul>
+                    <li>DiskANN vs HNSW: DiskANN=1B scale SSD. HNSW=<100M RAM fast</li>
+                    <li>Cosmos DB 1ms: User memory + real-time. VectorDistance + SQL</li>
+                    <li>AI Search 40ms: Full-text + Vector + Facets. Better for search UX</li>
+                    <li>Multi-tenancy: Partition /tenantId. DiskANN per partition</li>
+                </ul>
+            </div>
+            
+            <!-- Card 10 -->
+            <div class="card card-10">
+                <div class="card-header">
+                    <div class="card-number">10</div>
+                    <div class="card-icon">🔭</div>
+                    <div class="card-title">Observability for Agents</div>
+                </div>
+                <div class="card-subtitle">Creating transparent & debuggable systems:</div>
+                <ul>
+                    <li>Structured Logging: Per-agent log `agent=coder, action=tool_call`</li>
+                    <li>Distributed Tracing: OpenTelemetry + Microsoft.SemanticKernel*</li>
+                    <li>Health Checks: /health checks OpenAI, Cosmos, Search</li>
+                    <li>Cost Tracing: Meter.CreateCounter("llm.tokens") per userId</li>
+                </ul>
+            </div>
+            
+            <!-- Card 11 -->
+            <div class="card card-11">
+                <div class="card-header">
+                    <div class="card-number">11</div>
+                    <div class="card-icon">🔐</div>
+                    <div class="card-title">Security & RBAC in Agents</div>
+                </div>
+                <div class="card-subtitle">Maintain least privilege gracefully:</div>
+                <ul>
+                    <li>Entra ID + ClaimsPrincipal: SK auto-injects. user.IsInRole("HR")</li>
+                    <li>Tool-level RBAC: [RequiresRole("Admin")] on KernelFunction</li>
+                    <li>Audit Logs in Purview: Every tool call logged. DPDP compliance</li>
+                    <li>Secretless: Managed Identity for OpenAI, Cosmos. No keys in code</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Based on .NET 8 + Semantic Kernel + Azure AI • For 80L-1Cr AI Engineering Roles</p>
+        </div>
+    </div>
+</body>
+</html>
